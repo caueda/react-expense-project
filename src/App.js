@@ -20,7 +20,8 @@ function App() {
     }
     return (
         <div>
-            <NewExpense addExpenseData={addExpenseDataHandler}/>
+            <NewExpense
+                addExpenseData={addExpenseDataHandler}/>
             <Expenses expenses={expenses}/>
         </div>
     );

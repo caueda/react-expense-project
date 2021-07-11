@@ -27,6 +27,7 @@ const ExpenseForm = (props) => {
         }
         onSaveDataExpense(expenseData);
         clear();
+        props.onClickHandler();
     }
 
     const clear = () => {
@@ -63,6 +64,7 @@ const ExpenseForm = (props) => {
                 </div>
             </div>
             <div className='new-expense__actions'>
+                <button type="button" onClick={props.onClickHandler}>Cancel</button>
                 <button type='submit'>Add Expense</button>
             </div>
 
